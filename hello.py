@@ -1,4 +1,4 @@
-def application(env, start_response):
+def app(env, start_response):
   body = [p for p in env['QUERY_STRING'].split('&')]
   body = '\n'.join(body)
   status = '200 OK'
